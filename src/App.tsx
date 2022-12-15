@@ -57,7 +57,7 @@ const App: React.FC = () => {
       <TodoForm onAdd={addNewTask} />
       <TodoFilter onButtonClick={setFilterType} active={filterType} />
       <Todo list={filterTodosFunction()} onChangeStatus={changeStatus} />
-      <Button variant="contained" onClick={clearCompleted}>
+      <Button variant="outlined" color="error" onClick={clearCompleted}>
         Clear completed
       </Button>
     </TodoAppContainer>
